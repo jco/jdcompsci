@@ -1,0 +1,6 @@
+<%= link_to project do %>
+  <% div_for(project) do %>
+    <h1 class="project_name"><%=h project.name %></h1>
+    <div class="screenshot"><%= image_tag @project.image.url %></div>
+  <% end %>
+<% end %>

@@ -1,0 +1,16 @@
+<h1>Projects by <%= @user.name %></h1>
+<% if logged_in? and current_user == @user %>
+  <div><link_to "Edit my account", edit_account_path %> |
+  <link_to "Delete my account", account_path, :method => :delete, 
+  :confirm => "Really delete your account and all your projects?" %></div>
+<% end %>
+
+<% unless @user.projects.blank? %>
+<%= render :partial => @user.projects %>
+<% else %>
+  <% if logged_in? and current_user == @user %>
+  <p>You have no projects yet. <%= link_to "Add some!", new_project_path %></p>
+  <% else %>
+  <p><%= @user.name %> has no projects yet.</p>
+  <% end %>
+<% end %>
