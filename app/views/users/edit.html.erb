@@ -1,3 +1,7 @@
 <h1>Editing Account</h1>
 
-FORM!
+<% form_for @user, :url => account_path do |f| %>
+  <%= f.error_messages %>
+  <%= render :partial => "form", :object => f %>
+  <%= f.submit "Update" %>
+<% end %>

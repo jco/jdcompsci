@@ -1,22 +1,13 @@
+!! get the applet to display
+
+- Possibly add a Library model for jars that are made available to every project
 - TEST EVERYTHING FIRST
-- Create edit form for a user account
 - Possibly abstract <% if logged_in? and current_user == @user %> into some kind of helper,
 	kind of like admin_area
+- maybe refactor the /account path, not needed?
 - Navigation: add a link to "all authors"
 - Double check whether current_user == @user works. Not sure how to test equality
-- Change it so the user simply logs in with their email if possible
-	- I think this means destroying the "login" column
-	- or, maybe it is smart enough to log in using the email if no login text box was present
 - Add better formatting to the description (html? markdown? textile?)
-- Create a migration associating users with projects:
-	script/generate migration add_authorship_to_projects
-	t.belongs_to :user
-- Create some addition fields for users:
-	t.string :name
-- Decide whether a user's projects should show at /users/5 or at /users/5/projects
-	- In that case, you would need to route users so that they have_many :projects
-	- Or, in order to solve the problem of making the show action restricted for some 
-	cases and not others, I could put the profile at /users/5/projects
 - Consider categories instead of tagging
 - Commenting?
 - Gravatars?

@@ -1,7 +1,8 @@
 <h1><%=h @project.name %></h1>
-<% if logged_in? and current_user == @project.user %>
+<% if current_user_session and @project.user == current_user %>
   <div><%= link_to "Edit", edit_project_path(@project) %> |
   <%= link_to "Delete", @project, :method => :delete %></div>
+<% end %>
 
 <div id="author">By: <%= link_to @project.user.name, @project.user %></div>
 
@@ -11,7 +12,8 @@
 <div class="screenshot"><%= image_tag @project.image.url %></div>
 
 <% if @project.applet.exists? %>
-  <% content_tag :object, :codetype => "application/java", :classid => "java:#{@project.applet_code}", :archive => @project.applet.url, :width => @project.applet_width, :height => @project.applet_height do %>
+  <% content_tag :applet, :archive => @project.applet.url, :code => @project.applet_code,
+    :width => @project.applet_width, :height => @project.applet_height do %>
     Not working?
   <% end %>
 <% else %>

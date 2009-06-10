@@ -18,11 +18,27 @@ class UsersController < ApplicationController
   def show
     if params[:id]
       # /users/5
-      @user = User.find(params[id])
+      @user = User.find(params[:id])
     else
       # /account
       require_user
       @user = @current_user
+    end
+  end
+  
+  def edit
+    require_user
+    @user = @current_user
+  end
+  
+  def update
+    require_user
+    @user = @current_user
+    if @user.update_attributes(params[:user])
+      flash[:notice] = "Successfully changed account details"
+      redirect_to account_path
+    else
+      render :action => "new"
     end
   end
 

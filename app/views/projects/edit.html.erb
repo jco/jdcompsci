@@ -12,11 +12,11 @@
     <%= f.text_area :description %>
   </p>
   <p>
-    <%= f.label :image %><br />
+    <%= f.label :image %><%= "(current is #{image_tag @project.image.url})" if @project.image.exists? %><br />
     <%= f.file_field :image %>
   </p>
   <p>
-    <%= f.label :applet %><br />
+    <%= f.label :applet %> <%= "(current is #{@project.applet.url})" if @project.applet.exists? %><br />
     <%= f.file_field :applet %>
   </p>
   <p>
