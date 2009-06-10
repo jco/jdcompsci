@@ -1,0 +1,22 @@
+#nav {
+  background: #DDD;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+#nav a {
+}
+
+#account_controls {
+  float: right;
+}
+
+#flash_notice {
+  color: green;
+  background: #AFA;
+  text-align: center;
+}
+
+img {
+  border: 1px solid black;
+}

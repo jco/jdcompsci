@@ -4,92 +4,102 @@
     <dict>
         <key>fileTriggers</key>
         <dict>
+            <key>GLOB</key>
+            <string>..\rampage\public\stylesheets\global.css</string>
             <key>ROU</key>
-            <string>C:\rails\rampage\config\routes.rb</string>
+            <string>..\rampage\config\routes.rb</string>
             <key>_arti</key>
-            <string>C:\rails\rampage\app\views\admin\articles\_article.html.erb</string>
+            <string>..\rampage\app\views\admin\articles\_article.html.erb</string>
             <key>_pro</key>
             <string>app\views\projects\_project.html.erb</string>
             <key>admin</key>
-            <string>C:\rails\rampage\app\views\layouts\admin.html.erb</string>
+            <string>..\rampage\app\views\layouts\admin.html.erb</string>
             <key>admin.css</key>
-            <string>C:\rails\rampage\public\stylesheets\admin.css</string>
+            <string>..\rampage\public\stylesheets\admin.css</string>
             <key>admin.ht</key>
-            <string>C:\rails\rampage\app\views\layouts\admin.html.erb</string>
+            <string>..\rampage\app\views\layouts\admin.html.erb</string>
             <key>appli</key>
-            <string>C:\rails\rampage\app\views\layouts\application.html.erb</string>
+            <string>..\rampage\app\views\layouts\application.html.erb</string>
             <key>applica</key>
-            <string>C:\rails\rampage\app\views\layouts\application.html.erb</string>
+            <string>..\rampage\app\views\layouts\application.html.erb</string>
             <key>application</key>
-            <string>C:\rails\rampage\app\controllers\application_controller.rb</string>
+            <string>..\rampage\app\controllers\application_controller.rb</string>
+            <key>application.ht</key>
+            <string>..\rampage\app\views\layouts\application.html.erb</string>
             <key>application.html</key>
-            <string>C:\rails\rampage\app\views\layouts\application.html.erb</string>
+            <string>..\rampage\app\views\layouts\application.html.erb</string>
             <key>application_con</key>
-            <string>C:\rails\rampage\app\controllers\application_controller.rb</string>
+            <string>..\rampage\app\controllers\application_controller.rb</string>
             <key>arti</key>
-            <string>C:\rails\rampage\app\models\article.rb</string>
+            <string>..\rampage\app\models\article.rb</string>
             <key>article.rb</key>
-            <string>C:\rails\rampage\app\models\article.rb</string>
+            <string>..\rampage\app\models\article.rb</string>
+            <key>comments_con</key>
+            <string>..\rampage\app\controllers\admin\comments_controller.rb</string>
             <key>config</key>
-            <string>C:\rails\rampage\.git\config</string>
+            <string>..\rampage\.git\config</string>
             <key>control_pa</key>
-            <string>C:\rails\rampage\app\views\layouts\admin\control_panel.html.erb</string>
+            <string>..\rampage\app\views\layouts\admin\control_panel.html.erb</string>
             <key>control_pan</key>
-            <string>C:\rails\rampage\app\views\admin\articles\control_panel.html.erb</string>
+            <string>..\rampage\app\views\admin\articles\control_panel.html.erb</string>
             <key>controller</key>
-            <string>C:\rails\rampage\app\controllers\issues_controller.rb</string>
+            <string>..\rampage\app\controllers\issues_controller.rb</string>
             <key>edit</key>
-            <string>C:\rails\rampage\app\views\admin\articles\edit.html.erb</string>
+            <string>..\rampage\app\views\admin\articles\edit.html.erb</string>
             <key>envi</key>
-            <string>C:\rails\rampage\config\environment.rb</string>
+            <string>..\rampage\config\environment.rb</string>
+            <key>glo</key>
+            <string>public\stylesheets\global.css</string>
             <key>glob</key>
-            <string>C:\rails\rampage\public\stylesheets\global.css</string>
+            <string>..\rampage\public\stylesheets\global.css</string>
             <key>globa</key>
-            <string>C:\rails\rampage\public\stylesheets\global.css</string>
+            <string>..\rampage\public\stylesheets\global.css</string>
             <key>global</key>
-            <string>C:\rails\rampage\public\stylesheets\global.css</string>
+            <string>..\rampage\public\stylesheets\global.css</string>
             <key>hom</key>
-            <string>C:\rails\rampage\app\views\issues\home.html.erb</string>
+            <string>..\rampage\app\views\issues\home.html.erb</string>
             <key>home</key>
-            <string>C:\rails\rampage\app\views\issues\home.html.erb</string>
+            <string>..\rampage\app\views\issues\home.html.erb</string>
             <key>inde</key>
             <string>app\views\projects\index.html.erb</string>
             <key>issue</key>
-            <string>C:\rails\rampage\app\models\issue.rb</string>
+            <string>..\rampage\app\models\issue.rb</string>
             <key>issues_c</key>
-            <string>C:\rails\rampage\app\controllers\issues_controller.rb</string>
+            <string>..\rampage\app\controllers\issues_controller.rb</string>
             <key>issues_con</key>
-            <string>C:\rails\rampage\app\controllers\issues_controller.rb</string>
+            <string>..\rampage\app\controllers\issues_controller.rb</string>
+            <key>pages_c</key>
+            <string>..\rampage\app\controllers\admin\pages_controller</string>
             <key>reset</key>
-            <string>C:\rails\rampage\public\stylesheets\reset.css</string>
+            <string>..\rampage\public\stylesheets\reset.css</string>
             <key>rou</key>
-            <string>C:\rails\rampage\config\routes.rb</string>
+            <string>config\routes.rb</string>
             <key>rout</key>
-            <string>C:\rails\rampage\config\routes.rb</string>
+            <string>..\rampage\config\routes.rb</string>
             <key>route</key>
-            <string>C:\rails\rampage\config\routes.rb</string>
+            <string>..\rampage\config\routes.rb</string>
             <key>sc</key>
-            <string>C:\rails\rampage\db\schema.rb</string>
+            <string>..\rampage\db\schema.rb</string>
             <key>sch</key>
             <string>db\schema.rb</string>
             <key>sections_c</key>
-            <string>C:\rails\rampage\app\controllers\admin\sections_controller.rb</string>
+            <string>..\rampage\app\controllers\admin\sections_controller.rb</string>
             <key>sections_con</key>
-            <string>C:\rails\rampage\app\controllers\sections_controller.rb</string>
+            <string>..\rampage\app\controllers\sections_controller.rb</string>
             <key>show</key>
-            <string>C:\rails\rampage\app\views\sections\show.html.erb</string>
+            <string>..\rampage\app\views\sections\show.html.erb</string>
             <key>subscriber</key>
-            <string>C:\rails\rampage\app\models\subscriber.rb</string>
+            <string>..\rampage\app\models\subscriber.rb</string>
             <key>subscribers_c</key>
-            <string>C:\rails\rampage\app\controllers\admin\subscribers_controller.rb</string>
+            <string>..\rampage\app\controllers\admin\subscribers_controller.rb</string>
             <key>subscribers_con</key>
-            <string>C:\rails\rampage\app\controllers\subscribers_controller.rb</string>
+            <string>..\rampage\app\controllers\subscribers_controller.rb</string>
             <key>subscribers_cont</key>
-            <string>C:\rails\rampage\app\controllers\subscribers_controller.rb</string>
+            <string>..\rampage\app\controllers\subscribers_controller.rb</string>
             <key>to</key>
-            <string>C:\rails\rampage\TODO.txt</string>
+            <string>..\rampage\TODO.txt</string>
             <key>todo</key>
-            <string>C:\rails\rampage\TODO.txt</string>
+            <string>..\rampage\TODO.txt</string>
             <key>users_c</key>
             <string>app\controllers\users_controller.rb</string>
         </dict>

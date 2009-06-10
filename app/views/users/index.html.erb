@@ -1,0 +1,5 @@
+<h1>All authors</h1>
+
+<% for user in @users %>
+<h2><%= link_to user.name, user %></h2>
+<% end %>

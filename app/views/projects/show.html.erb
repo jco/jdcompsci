@@ -12,7 +12,7 @@
 <div class="screenshot"><%= image_tag @project.image.url %></div>
 
 <% if @project.applet.exists? %>
-  <% content_tag :applet, :archive => @project.applet.url, :code => @project.applet_code,
+  <% content_tag :applet, :archive => (Library.all_jars << @project.applet.url), :code => @project.applet_code,
     :width => @project.applet_width, :height => @project.applet_height do %>
     Not working?
   <% end %>

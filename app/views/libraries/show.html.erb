@@ -1,0 +1,6 @@
+<h1><%= h @library.name%></h1>
+
+<% if current_user_session %>
+  <div><%= link_to "Edit", edit_library_path(@library) %> |
+  <%= link_to "Delete", @library, :method => :delete %></div>
+<% end %>

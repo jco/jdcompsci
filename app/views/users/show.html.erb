@@ -16,5 +16,5 @@
 <% end %>
 
 <% if current_user_session and @user == current_user %>
-<div class="addmore"><% link_to "Upload a new project!", new_project_path %></div>
+<div class="addmore"><%= link_to "Upload a new project!", new_project_path %></div>
 <% end %>

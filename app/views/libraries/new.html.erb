@@ -1,0 +1,13 @@
+<h1>New Library</h1>
+
+<% form_for @library, :html => {:multipart => true} do |f| %>
+  <%= f.error_messages %>
+  
+  <%= f.label :name %><br />
+  <%= f.text_field :name %><br />
+  
+  <%= f.label :jar %><br />
+  <%= f.file_field :jar %><br />
+  
+  <%= f.submit "Create" %>
+<% end %>

@@ -9,7 +9,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090602134758) do
+ActiveRecord::Schema.define(:version => 20090610020227) do
+
+  create_table "libraries", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "jar_file_name"
+    t.string   "jar_content_type"
+    t.integer  "jar_file_size"
+  end
 
   create_table "projects", :force => true do |t|
     t.string   "name"

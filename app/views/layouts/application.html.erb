@@ -6,18 +6,24 @@
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title>Title</title>
   <%= stylesheet_link_tag 'scaffold' %>
+  <%= stylesheet_link_tag 'global' %>
   <%= auto_discovery_link_tag :atom, projects_path(:format => :atom) %>
 </head>
 <body>
+<div id="nav">
+  <%= link_to "Home", root_url %> |
+  <%= link_to "Authors", users_path %> |
+  <%= link_to "Libraries", libraries_path %>
+</div>
 
-<p style="color: green"><%= flash[:notice] %></p>
+<p id="flash_notice"><%= flash[:notice] %></p>
 
 <div id="account_controls">
 <% if !current_user %>
   <%= link_to "Register", new_account_path %> |
   <%= link_to "Log In", new_user_session_path %>
 <% else %>
-  Logged in as <%= link_to current_user.name, account_path %> |
+  Logged in as <%= link_to current_user.name, edit_account_path %> |
   <%= link_to "Log Out", user_session_path, :method => :delete %>
 <% end %>
 </div>

@@ -1,3 +1,7 @@
 <h1>JD Computer Science Projects</h1>
 
 <%= render :partial => @projects %>
+
+<% if current_user_session %>
+<div class="addmore"><%= link_to "Upload a new project!", new_project_path %></div>
+<% end %>
